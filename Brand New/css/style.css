@@ -161,7 +161,7 @@ body {
 .screenshots {
     width: 100%;
     min-height: 487px;
-    padding: 50px 50px 20px 50px;
+    padding: 50px;
     box-sizing: border-box;
     /*border: 1px solid black;*/
     display: flex;
@@ -187,6 +187,11 @@ body {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+}
+
+.screenshots-wrapper:nth-child(4),
+.screenshots-wrapper:nth-child(5) {
+    margin: 0;
 }
 
 .screenshots-photo {
@@ -270,6 +275,11 @@ body {
     border-radius: 10px;
 }
 
+.reviews-wrapper:nth-child(4),
+.reviews-wrapper:nth-child(5) {
+    margin: 0;
+}
+
 .reviews-circle-wrapper:before {
     content: "";
     display: block;
@@ -281,7 +291,7 @@ body {
 }
 
 .reviews-circle-txt {
-    margin-bottom: 10px;
+    margin:0 0 10px 0;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -516,7 +526,7 @@ textarea[placeholder] {
 .contacts {
     display: block;
     box-sizing: border-box;
-    width: 300px;
+    width: 242px;
     /*border: 1px solid black;*/
 }
 
@@ -564,51 +574,64 @@ textarea[placeholder] {
     width: 100%;
     /* border: 1px solid black; */
     display: flex;
+ /*   font-size: 60px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;*/
 }
 
 .social-item {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 42px;
     /* border: 1px solid black; */
-    background-image: url('https://sun9-19.userapi.com/c840633/v840633496/6abd2/aHsgqxaaD4g.jpg');
+    background-image: url('../img/socialbuttons.png');
 }
+
+
 
 .social-item:nth-child(1) {
     background-position: 0 0;
 }
 
 .social-item:nth-child(2) {
-    background-position: -59px 0;
+    background-position: 47px 0;
 }
 
 .social-item:nth-child(3) {
-    background-position: -118px 0;
+    background-position: 94px 0;
 }
 
 .social-item:nth-child(4) {
-    background-position: -177px 0;
+    background-position: 141px 0;
 }
 
-
+.social-item:nth-child(5) {
+    background-position: 190px 0;
+}
 /* ================================= */
 
 .social-item:nth-child(1):hover {
-    background-position: 0 -59px;
+    background-position: 0 -42px;
+    color: green;
 }
 
 .social-item:nth-child(2):hover {
-    background-position: -59px -59px;
+    background-position: 47px -42px;
 }
 
 .social-item:nth-child(3):hover {
-    background-position: -118px -59px;
+    background-position: 94px -42px;
 }
 
 .social-item:nth-child(4):hover {
-    background-position: -177px -59px;
+    background-position: 141px -42px;
 }
 
+.social-item:nth-child(5):hover {
+    background-position: 190px -42px;
+}
 .copyright{
     display: flex;
     box-sizing: border-box;
